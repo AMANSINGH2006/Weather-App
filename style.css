@@ -274,3 +274,75 @@ h1 {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+
+
+
+/* media queries */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-block: 1.5rem;
+    }
+
+    .tabContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .formContainer {
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .formContainer input {
+        width: 100%;
+    }
+
+    .formContainer .btn {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .parameterContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parameter {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .userInfoContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name {
+        justify-content: center;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .tabContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .parameter {
+        width: 45%;
+    }
+}
+
+/* Large devices (small desktops/laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .parameter {
+        width: 30%;
+    }
+}
